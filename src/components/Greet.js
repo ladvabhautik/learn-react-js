@@ -6,11 +6,16 @@ import React from "react";
 
 
 // function components
+// const Greet = ({name,heroName}) => {
 const Greet = (props) => {
+    // destructuringPropsState
+    const { name, heroName } = props
     return (
         <>
-            <h1>Function Components {props.name} a.k.a {props.heroName}</h1>
-            {props.children}
+            {/* <h1>Function Components {props.name} a.k.a {props.heroName}</h1> */}
+            {/* {props.children} */}
+
+            <h1>Function Components {name} a.k.a {heroName}</h1>
         </>
     )
 }
