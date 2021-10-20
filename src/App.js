@@ -1,4 +1,5 @@
 import './App.css';
+import ChildComponent from './components/ChildComponent';
 import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
@@ -6,12 +7,14 @@ import FucntionClick from './components/FucntionClick';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
 import Message from './components/Message';
+import ParentComponent from './components/ParentComponent';
 import Welcome from './components/Welcome';
 
 function App() {
   return (
     <div className="App">
-      <EventBind />
+      <ParentComponent />
+      {/* <EventBind /> */}
       {/* <FucntionClick /> */}
       {/* <ClassClick /> */}
       {/* <Counter /> */}
